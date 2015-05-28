@@ -34,6 +34,13 @@
 				<li><%= link_to "Contact", static_pages_contact_path %></li>
 				<li><a href="/products">Products and Services</a></li>
 			</ul>
+
+			<%= form_tag("/products", method: "get") do %>
+				<%= label_tag(:q, "Search for:") %>
+				<%= text_field_tag(:q) %>
+				<%= submit_tag("Search") %>
+			<% end %>
+
 		</div> <!-- /.navbar-collapse -->
 	</div>  <!-- /.container-fluid -->
 </nav> 
