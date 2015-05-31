@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
   resources :users
   resources :products
 
@@ -9,6 +10,8 @@ Rails.application.routes.draw do
   get 'static_pages/index'
 
   post 'static_pages/thank_you'
+
+resources :orders, only: [:index, :show, :new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -22,7 +25,7 @@ Rails.application.routes.draw do
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
-resources :orders, only: [:index, :show, :new, :create]
+
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
