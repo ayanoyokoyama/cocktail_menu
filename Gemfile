@@ -53,5 +53,5 @@ group :production do
 	gem 'pg'
 end
 
-gem 'cancancan', '~> 1.10'
+gem 'cancancan'
 
