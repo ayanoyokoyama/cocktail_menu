@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
-before_filter :authenticate_user!
+#before_filter :authenticate_user!
 
   def index
     if params[:q]
@@ -18,6 +18,7 @@ before_filter :authenticate_user!
   # GET /products/1
   # GET /products/1.json
   def show
+    @comments = @product.comments.all.order('created_at DESC')
   end
 
   # GET /products/new
