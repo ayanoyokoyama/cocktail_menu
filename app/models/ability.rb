@@ -2,11 +2,11 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-<<<<<<< HEAD
+
     user ||= User.new # guest user (not logged in)
     can :manage, User, id: user.id
     
-  end
+
 end
     # Define abilities for the passed in user here. For example:
     #
@@ -15,7 +15,7 @@ end
     
     #   else
     #     can :read, :all
-=======
+
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)
@@ -24,7 +24,7 @@ end
     #   else
     #     can :read, :all
     #   end
->>>>>>> added authorization
+
     #
     # The first argument to `can` is the action you are giving the user
     # permission to do.
@@ -43,9 +43,6 @@ end
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
-<<<<<<< HEAD
 
-=======
-  end
 end
->>>>>>> added authorization
+
