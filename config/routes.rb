@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-  
+
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
 
   resources :products do
@@ -11,10 +10,10 @@ Rails.application.routes.draw do
 
   resources :orders, only: [:index, :show, :new, :create]
 
-=======
+
   resources :users
   resources :products
->>>>>>> authentication
+
 
   get 'static-pages/about'
 
