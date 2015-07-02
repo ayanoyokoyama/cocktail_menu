@@ -162,7 +162,11 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+<<<<<<< HEAD
   cancancan
+=======
+  cancancan (~> 1.10)
+>>>>>>> authentication
   coffee-rails (~> 4.1.0)
   devise
   jbuilder (~> 2.0)
