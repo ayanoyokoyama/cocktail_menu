@@ -6,7 +6,6 @@ class Ability
     user ||= User.new # guest user (not logged in)
     can :manage, User, id: user.id
 
-  end
 end
     # Define abilities for the passed in user here. For example:
     #
@@ -43,7 +42,5 @@ end
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
-
- 
 
 

@@ -162,6 +162,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+
   cancancan
 
   cancancan (~> 1.10)
