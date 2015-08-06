@@ -1,16 +1,41 @@
 require 'rails_helper'
-require 'spec_helper'
+
+	describe User do
+
+	context "first and last name present" do
+
+		before { @user = User.new(first_name: "John", last_name: "Smith") }
+
+		it "should return first and last"
+			expect(@user.full_name).to eq "John Smith"
+		end
+	end
+
+	context "first name missing" do
+
+		before { @user = User.new(last_name: "Smith") }
+
+		it "should return last name only" do
+			expect(@user.full_name).to eq "Smith"
+		end
+	end
+
+	context "last name missing" do
+
+		before { @user = User.new(first_name: "John") }
+
+		it "should return first name only" do
+			expect(@user.full_name).to eq "John"
+		end
+	end
+
+	context "no names present" do
+
+		before { @puser = User.new() }
+
+		it "should return nothing" do
+			expect(@user.full_name).to eq ""
+		end
+	end
 
 
-RSpec.describe User, type: :model do
-    before do 
-    	@user = marie.create(:user)
-    end
-
-    subject { @user }
-
-    it "is invalid without email" do
-    		subject.email = nil
-    		should_not be_valid
-    	end
-end
