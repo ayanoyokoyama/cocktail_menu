@@ -1,0 +1,10 @@
+<form action="" method="POST"> 
+<script
+  src="https://checkout.stripe.com/checkout.js" class="stripe-button" id="show-payment"
+  data-key="pk_test_Nq8Ujdve5MrzWIWzuKeMttw0"
+  data-image= "<%= @product.image_url %>"
+  data-name= "<%= @product.name %>"
+  data-description= "<%= @product.description %>"
+  data-amount= "<%= @product.price %>">
+</script>
+</form>

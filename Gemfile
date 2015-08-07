@@ -6,7 +6,8 @@ gem 'cancancan', '~> 1.10'
 
 gem 'will_paginate'
 
-gem "factory_girl_rails", "~> 4.0"
+
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -15,7 +16,10 @@ gem 'rails', '4.2.1'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails', '~> 3.0'
+  gem "factory_girl_rails", "~> 4.0"
+   gem 'guard'
 end
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -60,9 +64,8 @@ group :production do
 	gem 'pg'
 end
 
-group :development do
-  gem 'guard'
-end
+
+
 
 
 
