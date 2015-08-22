@@ -8,6 +8,7 @@ class UsersController < ApplicationController
 
   # GET /users.json
   def index
+    byebug
     @users = User.all
   end
 
