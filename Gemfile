@@ -6,6 +6,8 @@ gem 'cancancan', '~> 1.10'
 
 gem 'will_paginate'
 
+gem 'chosen-rails'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
