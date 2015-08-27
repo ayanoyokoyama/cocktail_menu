@@ -15,6 +15,15 @@
 //= require turbolinks
 //= require_tree .
 
+
+//= require chosen-jquery
+//= require scaffold
+
+$(document).ready(funcrion() {
+	$(".chzn-select").chosen();
+});
+
+
 $(document).on('ready page:load', function(){
 		$('.rating').raty( { path: '/assets', scoreName: 'comment[rating]'
 });
