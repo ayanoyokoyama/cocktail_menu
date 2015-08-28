@@ -1,10 +1,13 @@
-<form action="" method="POST"> 
-<script
-  src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
-  data-key="pk_test_Nq8Ujdve5MrzWIWzuKeMttw0"
-  data-image= "<%= @product.image_url %>"
-  data-name= "<%= @product.name %>"
-  data-description= "<%= @product.description %>"
-  data-amount= "<%= @product.price %>">
-</script>
-</form>
+<%= form_tag payments_path do %>
+	<%= hidden_field_tag :product_id, product.id %>
+	<div id="stripeform"> 
+		<script
+  			src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+  			data-key="pk_test_Nq8Ujdve5MrzWIWzuKeMttw0"
+  			data-image= "<%= @product.image_url %>"
+  			data-name= "<%= @product.name %>"
+  			data-description= "<%= @product.description %>"
+  			data-amount= "<%= @product.price %>">
+		</script>
+	</div>
+<% end %>
