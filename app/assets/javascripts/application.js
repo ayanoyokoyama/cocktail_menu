@@ -19,7 +19,7 @@
 //= require chosen-jquery
 //= require scaffold
 
-$(document).ready(funcrion() {
+$(document).ready(function() {
 	$(".chzn-select").chosen();
 });
 
