@@ -14,13 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-
 //= require chosen-jquery
-//= require scaffold
 
-$(document).ready(function() {
-	$(".chzn-select").chosen();
+
+$(document).on(‘ready page:load’,function() {
+    $(".chzn-select").chosen();
 });
 
 
