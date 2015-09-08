@@ -72,6 +72,7 @@ end
 
 # Storing Caches
 gem 'dalli'
+gem 'redis-rails'
 
 
 
