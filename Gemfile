@@ -70,6 +70,9 @@ group :production do
 end
 
 
+# Storing Caches
+gem 'dalli'
+
 
 
 
