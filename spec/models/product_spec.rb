@@ -9,15 +9,13 @@ describe Product do
 		@product.comments.create(:rating => 3, :user => @user, :body => "Okay cocktail.")
 		@product.comments.create(:rating => 5, :user => @user, :body => "Perfect cocktail!")
 	end
-	
 
 it "returns the average rating of all comments" do
+	expect (@product.rating).to eq "3"
 end
 
-it "should the averege rating to eq 3"
-
-
+it "should the averege rating to eq 3" do
 end
 
-
+end
 	
