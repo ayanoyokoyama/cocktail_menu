@@ -18,10 +18,11 @@ group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails', '~> 3.0'
   gem "factory_girl_rails", "~> 4.0"
-   gem 'guard'
-   gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+  gem 'guard'
+   
 end
 
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
