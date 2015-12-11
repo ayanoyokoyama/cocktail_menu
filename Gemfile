@@ -19,7 +19,10 @@ group :development, :test do
 	gem 'rspec-rails', '~> 3.0'
   gem "factory_girl_rails", "~> 4.0"
   gem 'guard'
-   
+  gem 'guard-rspec', require: false
+  gem 'spork-rails'
+  gem 'guard-spork'
+  # (Since spork-rails depends on spork, it is not necessary to put both spork and spork-rails in your Gemfile)
 end
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
