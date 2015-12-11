@@ -4,7 +4,7 @@ require 'rails_helper'
 describe UsersController, :type => :controller do
 	
 	before do
-		@user = User.create(:email => "test@example.com", :password => "genericpassword")
+		@user = create(:user)
 		@user2 = User.create(:email => "test2@exaple.com", :password => "genericpassword2")
 	end
 
