@@ -5,6 +5,11 @@
 
 		<p id="show-image">
 		<img src="<%= @product.image_url %>" height="300" width="400">
+		<img id="zoom_01" src='images/small/image1.png' data-zoom-image="images/large/image1.jpg"/>
+
+		<script>
+			$('#zoom_01').elevateZoom();
+		</script>
 		</p>
 
 		<p>

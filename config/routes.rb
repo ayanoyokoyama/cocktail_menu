@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   resources :users
   resources :products
 
+  resources :payments
 
+  
   get 'static-pages/about'
 
   get 'static_pages/contact'
