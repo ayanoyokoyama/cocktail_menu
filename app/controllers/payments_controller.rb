@@ -10,6 +10,11 @@ class PaymentsController < ApplicationController
 				:source => token,
 				:description => params[:stripeEmail]
 			)
+
+			if charge.paid
+				Order.create()
+			end
+
 		rescue Stripe::CardError => e
 		# The card has been declined	
 		body = e.json_body
