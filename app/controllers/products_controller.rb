@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-
+  respond_to :json, :html
   # GET /products
   # GET /products.json
 #before_filter :authenticate_user!
@@ -13,6 +13,7 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
   end
+  respond_with @product
  end 
 
   # GET /products/1
